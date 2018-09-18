@@ -52,7 +52,7 @@ function buildApp(i, app_vars, cb) {
     cb();
   } else {
     self.log('Installing App...');
-    var page = 'https://github.com/adantoscano/react-lite-boilerplate';
+    var page = 'https://github.com/adantoscano/react-simple';
     var now = new Date();
     var temp_folder_name = String(now.getTime());
     var folder_name = makeDirname(app_vars.name);
