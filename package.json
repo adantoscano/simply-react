@@ -1,28 +1,30 @@
 {
-  "name": "react-lite-boilerplate",
+  "name": "react-simple",
   "version": "0.0.1",
   "description": "React boilerplate with webpack 4",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --config webpack.dev.config.js --open",
-    "build": "webpack",
-    "react-lite-boilerplate": "node ./bin/cli.js"
+    "build": "webpack"
+  },
+  "bin": {
+    "react-simple": "./bin/cli.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/adantoscano/react-lite-boilerplate.git"
+    "url": "git+https://github.com/adantoscano/react-simple.git"
   },
   "keywords": [
     "react",
     "boilerplate"
   ],
-  "author": "Adan Toscano",
+  "author": "Adán Toscano",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/adantoscano/react-lite-boilerplate/issues"
+    "url": "https://github.com/adantoscano/react-simple/issues"
   },
-  "homepage": "https://github.com/adantoscano/react-lite-boilerplate#readme",
+  "homepage": "https://github.com/adantoscano/react-simple#readme",
   "dependencies": {
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.4",
