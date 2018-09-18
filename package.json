@@ -1,5 +1,5 @@
 {
-  "name": "react-simple",
+  "name": "simply-react",
   "version": "0.0.1",
   "description": "React boilerplate with webpack 4",
   "main": "index.js",
@@ -9,11 +9,11 @@
     "build": "webpack"
   },
   "bin": {
-    "react-simple": "./bin/cli.js"
+    "simply-react": "./bin/cli.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/adantoscano/react-simple.git"
+    "url": "git+https://github.com/adantoscano/simply-react.git"
   },
   "keywords": [
     "react",
@@ -22,9 +22,9 @@
   "author": "Adán Toscano",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/adantoscano/react-simple/issues"
+    "url": "https://github.com/adantoscano/simply-react/issues"
   },
-  "homepage": "https://github.com/adantoscano/react-simple#readme",
+  "homepage": "https://github.com/adantoscano/simply-react#readme",
   "dependencies": {
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
