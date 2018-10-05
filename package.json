@@ -1,6 +1,6 @@
 {
   "name": "simply-react",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "React boilerplate with webpack 4",
   "main": "index.js",
   "scripts": {
@@ -37,10 +37,10 @@
     "react-dom": "^16.5.1",
     "style-loader": "^0.21.0",
     "url-loader": "^1.1.1",
+    "vorpal": "^1.12.0",
     "webpack": "^4.19.1"
   },
   "devDependencies": {
-    "vorpal": "^1.12.0",
     "webpack-cli": "^3.1.0",
     "webpack-dev-server": "^3.1.8"
   }
