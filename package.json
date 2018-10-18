@@ -1,6 +1,6 @@
 {
   "name": "simply-react",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "React boilerplate with webpack 4",
   "main": "index.js",
   "scripts": {
@@ -26,6 +26,9 @@
   },
   "homepage": "https://github.com/adantoscano/simply-react#readme",
   "dependencies": {
+    "vorpal": "^1.12.0"
+  },
+  "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
     "babel-preset-env": "^1.7.0",
@@ -37,10 +40,7 @@
     "react-dom": "^16.5.1",
     "style-loader": "^0.21.0",
     "url-loader": "^1.1.1",
-    "vorpal": "^1.12.0",
-    "webpack": "^4.19.1"
-  },
-  "devDependencies": {
+    "webpack": "^4.19.1",
     "webpack-cli": "^3.1.0",
     "webpack-dev-server": "^3.1.8"
   }
