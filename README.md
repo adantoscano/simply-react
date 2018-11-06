@@ -1,6 +1,6 @@
 # simply-react
 
-Just another react boilerplate but intending to be easily understandable.
+Just another react boilerplate intending to be easily understandable.
 
 ## How to use
 
