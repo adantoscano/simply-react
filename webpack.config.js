@@ -1,10 +1,8 @@
 const path = require('path');
-const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 
-module.exports = {
-  mode: 'production',
+const config = {
   entry: {
     app: path.join(__dirname, 'src/index.js')
   },
@@ -17,9 +15,6 @@ module.exports = {
     new CleanWebpackPlugin(['dist']),
     new HtmlWebpackPlugin({
       title: 'Coso'
-    }),
-    new webpack.DefinePlugin({
-      'process.env.SOCKET': ''
     })
   ],
   module: {
@@ -40,4 +35,14 @@ module.exports = {
       }
     }]
   }
+};
+
+module.exports = (env, argv) => {
+  if (argv.mode === 'development') {
+    config.devtool = 'eval-source-map';
+    config.devServer = {
+      contentBase: './dist'
+    }
+  }
+  return config;
 };
