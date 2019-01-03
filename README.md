@@ -4,7 +4,7 @@ Just another react boilerplate intending to be easily understandable.
 
 ## How to use
 
-`npx simply-react new`
+`npx simply-react`
 
 and follow the instructions.
 
