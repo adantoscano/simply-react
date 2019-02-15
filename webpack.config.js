@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 
@@ -47,7 +48,8 @@ const config = {
       exclude: /node_modules/,
       loader: 'babel-loader',
       query: {
-        presets: ['env', 'react']
+        presets: ['env', 'react'],
+        plugins: ['react-hot-loader/babel']
       }
     }, {
       test: /\.css$/,
@@ -65,8 +67,10 @@ module.exports = (env, argv) => {
   if (argv.mode === 'development') {
     // if dev mode add a http server with desired content, more configuration https://webpack.js.org/configuration/dev-server/
     config.devServer = {
-      contentBase: './dist'
-    }
+      contentBase: './dist',
+      hot: true
+    };
+    config.plugins.push(new webpack.HotModuleReplacementPlugin())
   }
   return config;
 };
