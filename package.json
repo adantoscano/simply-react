@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/adantoscano/simply-react#readme",
   "dependencies": {
-    "prompts": "^1.2.1"
+    "prompts": "^2.3.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
